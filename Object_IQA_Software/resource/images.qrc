@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="start_choice_ui">
+    <file>images/start_choice_ui_bg__bluesky.jpg</file>
+    <file>images/start_choice_ui_bg__windmill.jpg</file>
+    <file>images/start_choice_ui_bg_fly.jpg</file>
+    <file>images/start_choice_ui_bg_wheat.jpg</file>
+    <file>images/start_choice_ui_bg_West Lake.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images.qrc">
+    <normaloff>:/Main_Exp/images/app_icon.png</normaloff>:/Main_Exp/images/app_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+	border-image: url(:/Get_Info/images/Get_Info_bg_2.jpg);
+}</string>
+  </property>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>110</y>
+     <width>811</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>仿宋</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: none;</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'仿宋'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-weight:600; background-color:#ffffff;&quot;&gt;请您阅读一下内容，便于您后面的实验，谢谢！&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'黑体'; font-size:14pt; font-weight:600; color:#4d4d4d;&quot;&gt;研究背景：&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;   当前随手拍照分享已经成为人们日常生活中的重要组成部分。针对智能手机、单反相机等拍照设备及镜头配件的质量评价也因此成为极具商业价值的研究方向，并培育出了法国DXO实验室等众多评测机构。传统摄影器材的质量评价涵盖了清晰度、畸变、动态范围和色彩精度等多种客观检测内容，但如何从多个单项指标的测试中综合得到摄影器材的整体评价，目前依然是一个难题。目前，包括DXO实验室在内的诸多评测机构都没有公开具体的评分算法，其评分的客观性也因此受到质疑。在摄影器材的质量评价中，客观指标的评价和主观质量评价也同样存在差异。例如人们都有过这样的体验：两个不同品牌手机的拍摄图片质量对比中，尽管这两个手机相机的分辨率、对比度等指标都相近，但拍摄的图片的质量感觉可能会有明显差异，其中存在的理论和技术问题正是我们图像所的一个在研课题。&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;    不仅如此，图像所正在研究一个摄影器材的主观拍摄质量的评价方法，并且尝试提供市场上主流手机的拍摄质量评价排名。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'黑体'; font-size:14pt; font-weight:600; color:#4d4d4d;&quot;&gt;实验方法：&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;  针对本次&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;图像主观评价实验，我们采用单刺激离散质量评价方法，但会在第二张屏幕上以幻灯片形式播放同组其他照片，用以辅助您做出判断&lt;/span&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;。测试图片共xxx张，分为xxx个组（不同场景），需要您配合的是：&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;     1.请您用手机扫描右下角的二维码，以帮助我们此次主观实验的信息采集，其中主要包括性别、年龄段、是否佩戴眼镜等一些简单内容，我们保证只会将其用于后续模型研究之中。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;     2.接下来您将首先观看实验预热动画，以帮助您熟悉此次主观实验的内容和评价方法。其中您可以选择反复观看，直至您熟悉如何进行实验的评价。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;     3.在熟悉实验内容后，您可以选择“继续实验，下一步”，或返回上一步查看具体实验背景和方法，或点击“我已熟悉如何评价”进行正式实验。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;   4.具体实验：您将在屏幕左侧看到一张照片，并根据他的好坏，给出您认为的得分，得分范围为0-100分，分数越高表示图片质量越好，分数越低则表示质量越低。（大致对应：0分：几乎看不出是什么；20分：非常差；40分：很差；60分：一般；80分：很好；100分：极好的，几乎完美）因此，在实验过程中，屏幕将以第二屏幕幻灯片形式播放同场景的其他照片，用于辅助您观察并评价左侧图片的好坏。一张照片您将有10s的观察时间，接着您有12s的观察时间，做出判断。然后不断持续进行。为了您更好的进行实验，防止审美疲劳，请您根据工作人员的要求进行测试时间的安排。&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'FangSong'; font-size:12pt; color:#4d4d4d;&quot;&gt;     最后，再次感谢您参与此次图像质量评价实验！祝您实验愉快，生活愉快~&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="is_read_bginfo_rB">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>570</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>我已了解此次主观实验的内容</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>540</y>
+     <width>150</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Get_Info/images/backgroung_info_qrcode.jpg);
+border: none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>30</y>
+     <width>341</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>等线</family>
+     <pointsize>25</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+font: 25pt &quot;等线&quot;;
+color: rgb(0, 0, 0);
+border: none;</string>
+   </property>
+   <property name="text">
+    <string>实验背景及方法</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="go_to_warmup_btn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>620</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 18px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(147, 151, 158);
+	border-radius: 20px;
+	border: 2px;
+}
+QPushButton:pressed {
+	background-color: rgb(68, 68, 66);
+	border: 2px double;
+}
+QPushButton:hover {
+	background-color: rgb(141, 141, 151);
+}</string>
+   </property>
+   <property name="text">
+    <string>开始测试预热</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>10</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="minimumSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;最小化&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>700</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 20px;
+	color: rgb(65, 65, 65);
+	background-color: rgb(231, 231, 231);
+	border-radius: 20px;
+	border: 2px;
+}
+QPushButton:pressed {
+	background-color: rgb(209, 0, 0);
+	border: 2px double;
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	background-color: rgb(223, 223, 223);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>—</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="minimumSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Symbol</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>关闭</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>700</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	font: 20px;
+	color: rgb(65, 65, 65);
+	background-color: rgb(231, 231, 231);
+	border-radius: 20px;
+	border: 2px;
+}
+QPushButton:pressed {
+	background-color: rgb(200, 0, 0);
+	border: 2px double;
+	color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	background-color: rgb(223, 223, 223);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="go_to_warmup_btn_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>620</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	font: 18px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(147, 151, 158);
+	border-radius: 20px;
+	border: 2px;
+}
+QPushButton:pressed {
+	background-color: rgb(68, 68, 66);
+	border: 2px double;
+}
+QPushButton:hover {
+	background-color: rgb(141, 141, 151);
+}</string>
+   </property>
+   <property name="text">
+    <string>返回上一步</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>get_info_pane_min()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>872</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>874</x>
+     <y>-70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>get_info_pane_close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>946</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1031</x>
+     <y>32</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>go_to_warmup_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>jump_from_getinfo_to_warmup()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>632</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>724</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>is_read_bginfo_rB</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>is_read_bginfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>575</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-16</x>
+     <y>580</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>go_to_warmup_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>jump_from_getinfo_to_start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>643</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>358</x>
+     <y>731</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>get_info_pane_min()</slot>
+  <slot>get_info_pane_close()</slot>
+  <slot>jump_from_getinfo_to_warmup()</slot>
+  <slot>is_read_bginfo()</slot>
+  <slot>jump_from_getinfo_to_start()</slot>
+ </slots>
+</ui>

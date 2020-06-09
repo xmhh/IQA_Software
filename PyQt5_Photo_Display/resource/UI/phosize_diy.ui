@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>385</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images.qrc">
+    <normaloff>:/Main_Exp/images/app_icon.png</normaloff>:/Main_Exp/images/app_icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="photo_dis_gbox">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    font: 20px &quot;黑体&quot;;
+    border: none;
+	background-color: rgb(250, 250, 250);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+        </property>
+        <property name="title">
+         <string>图片大小自定义</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>30</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_32" stretch="0,1">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font: 12pt &quot;黑体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>显示比例：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="dis_ratio_cbox">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QComboBox {
+	border: 1px solid #bebebe;
+	padding: 1px 18px 1px 3px;
+	font: normal normal 13px &quot;Microsoft YaHei&quot;;
+	color: #555555;
+	background: transparent;
+	border-radius:10px;
+}
+ 
+ 
+QComboBox:editable{
+	background: transparent;
+}
+ 
+QComboBox:!on{
+}
+ 
+QComboBox:on{ /* the popup opens */
+	color: #555555;
+	border-color: #327cc0;
+	background: transparent;
+}
+ 
+QComboBox QAbstractItemView {
+	outline: 0; 
+	border: 1px solid #327cc0;
+	background-color: #F1F3F3;
+	font: normal normal 14px &quot;Microsoft YaHei&quot;;
+}
+ 
+QComboBox QAbstractItemView::item {
+	height: 15px;
+	color: #555555;
+	background-color: transparent;
+}
+ 
+QComboBox QAbstractItemView::item:hover {
+	color: #FFFFFF;
+	background-color: #327cc0;
+}
+ 
+QComboBox QAbstractItemView::item:selected {
+	color: #FFFFFF;
+	background-color: #327cc0;
+}
+ 
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+	background-color: #d0d2d4;
+}
+ 
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+	background: rgb(160,160,160);
+}
+ 
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical:hover {
+	background: rgb(90, 91, 93);
+}</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>4:3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>16:9</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_36">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1,0">
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font: 12pt &quot;黑体&quot;;</string>
+               </property>
+               <property name="text">
+                <string>图片大小：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="font">
+                <font>
+                 <family>黑体</family>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(135, 135, 135);
+font: 10pt &quot;黑体&quot;;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0,0,1">
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font: 10pt &quot;Microsoft YaHei UI&quot;;
+border-radius:10px;</string>
+               </property>
+               <property name="inputMethodHints">
+                <set>Qt::ImhNone</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>×</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:none;
+font: 10pt &quot;Microsoft YaHei UI&quot;;
+background-color: rgb(240, 240, 240);
+border-radius:10px;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="ensure_btn">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton:disabled {
+	
+	background-color:rgb(244, 0, 0);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+          </property>
+          <property name="text">
+           <string>确认更改</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="rechange_btn">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton:disabled {
+	
+	background-color:rgb(244, 0, 0);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+          </property>
+          <property name="text">
+           <string>重新修改</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>diy_pho_size_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-92</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ensure_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>ensure_diy_phosize()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rechange_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>rechange_diy_phosize()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>254</x>
+     <y>370</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>diy_pho_size_changed()</slot>
+  <slot>ensure_diy_phosize()</slot>
+  <slot>rechange_diy_phosize()</slot>
+ </slots>
+</ui>

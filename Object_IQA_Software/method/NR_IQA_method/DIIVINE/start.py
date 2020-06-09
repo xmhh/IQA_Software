@@ -1,0 +1,31 @@
+import matlab.engine
+import time
+import numpy as np
+import cv2
+import scipy.io as sio
+import os
+
+def divine_score(img_path):
+    t1 =time.time()
+    # 启动matlab引擎
+    engine = matlab.engine.start_matlab()
+    t2 = time.time()
+    print('启动用时',t2- t1)
+
+    # 读入图片
+    img =  cv2.imdecode(np.fromfile(img_path, dtype=np.uint8), cv2.IMREAD_GRAYSCALE)
+    sio.savemat('img.mat', {'img':img})
+    t3 = time.time()
+    print('加载时间', t3 - t2)
+
+    # 评价
+    score = engine.divine()
+    t4= time.time()
+    print('计算时间', t4 - t3)
+    os.remove('img.mat')
+    return score
+
+if __name__ == '__main__':
+    img_path = 'lena256.jpg'
+    score = divine_score(img_path)
+    print(score)

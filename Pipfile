@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.mirrors.ustc.edu.cn/simple/"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+six = "*"
+pyinstaller = "==3.6"
+pillow = "*"
+pyqtwebengine = "*"
+
+[requires]
+python_version = "3.6"

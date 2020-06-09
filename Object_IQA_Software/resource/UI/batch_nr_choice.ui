@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>328</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="choose_pho_gbox">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+    border: none;
+	
+	background-color: rgb(255, 255, 255);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}
+</string>
+       </property>
+       <property name="title">
+        <string>数据与算法选择</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1">
+          <item>
+           <widget class="QLineEdit" name="algo_le">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Times New Roman</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhNone</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="cursorMoveStyle">
+             <enum>Qt::LogicalMoveStyle</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="algo_chosen_btn_3">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>已选算法</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+          <item>
+           <widget class="QLineEdit" name="pho_addr_show_le">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Times New Roman</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhNone</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="cursorMoveStyle">
+             <enum>Qt::LogicalMoveStyle</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="choose_pho_btn">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>图片文件夹</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1">
+          <item>
+           <widget class="QLineEdit" name="mos_addr_show_le_2">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Times New Roman</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhNone</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="cursorMoveStyle">
+             <enum>Qt::LogicalMoveStyle</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="choose_pho_btn_2">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>楷体</family>
+              <pointsize>16</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+            </property>
+            <property name="text">
+             <string>评分记录地址</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="choose_pho_gbox_2">
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+    border: none;
+	background-color: rgb(255, 255, 255);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}
+</string>
+       </property>
+       <property name="title">
+        <string>评分进度</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QProgressBar" name="progressBar_2">
+          <property name="font">
+           <font>
+            <family>黑体</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QProgressBar {
+	border: 2px solid rgb(206, 206, 206);
+	background-color:rgb(255, 255, 255);
+	border-radius:3px ;
+	boder-style: inset;  
+}
+
+QProgressBar::chunk{
+	background-color:rgb(112, 112, 112); 
+	border-radius:3px;  
+	margin:2px;
+}
+</string>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="textVisible">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="textDirection">
+           <enum>QProgressBar::BottomToTop</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>6</number>
+     </property>
+     <property name="topMargin">
+      <number>6</number>
+     </property>
+     <property name="rightMargin">
+      <number>6</number>
+     </property>
+     <property name="bottomMargin">
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="start_mark_btn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton:disabled {
+	
+	background-color:rgb(244, 0, 0);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+       </property>
+       <property name="text">
+        <string>开始评分</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exit_btn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton:disabled {
+	
+	background-color:rgb(244, 0, 0);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+       </property>
+       <property name="text">
+        <string>退出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>choose_pho_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose_pho()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_mark_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>bye()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>choose_pho_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>choose_mos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>365</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>choose_pho()</slot>
+  <slot>start()</slot>
+  <slot>bye()</slot>
+  <slot>choose_mos()</slot>
+ </slots>
+</ui>

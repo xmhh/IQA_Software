@@ -1,0 +1,15 @@
+altgraph==0.17
+future==0.18.2
+joblib==0.14.1
+numpy==1.18.2+mkl
+opencv-python==4.2.0.32
+pefile==2019.4.18
+Pillow==7.1.1
+PyInstaller==3.6
+PyQt5==5.14.1
+PyQt5-sip==12.7.1
+PyQt5-stubs==5.14.2.0
+pywin32-ctypes==0.2.0
+scipy==1.4.1
+sewar==0.4.3
+six==1.14.0

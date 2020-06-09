@@ -1,0 +1,57 @@
+<RCC>
+  <qresource prefix="start">
+    <file>images/close_icon.png</file>
+    <file>images/start_bg_2.jpg</file>
+    <file>images/start_bg.jpg</file>
+  </qresource>
+  <qresource prefix="thumbnail_pho_wid">
+    <file>images/path.png</file>
+    <file>images/rank.png</file>
+    <file>images/score.png</file>
+  </qresource>
+  <qresource prefix="tips">
+    <file>images/dsis_1.png</file>
+    <file>images/dsis_2.png</file>
+    <file>images/dsis_3.png</file>
+    <file>images/dsis_4.png</file>
+    <file>images/tool_hide.png</file>
+    <file>images/hualun_5.png</file>
+    <file>images/hualun_100.png</file>
+    <file>images/slide_5.png</file>
+    <file>images/slide_100.png</file>
+    <file>images/dis_style.png</file>
+    <file>images/tips_ss_1.png</file>
+    <file>images/tips_ss_2.png</file>
+    <file>images/tips_ss_3.png</file>
+  </qresource>
+  <qresource prefix="Main_Exp">
+    <file>images/about_us.png</file>
+    <file>images/help_of_exp.png</file>
+    <file>images/more.png</file>
+    <file>images/others.png</file>
+    <file>images/dis.png</file>
+    <file>images/testee.png</file>
+    <file>images/exp.png</file>
+    <file>images/mos_record.png</file>
+    <file>images/database_setting.png</file>
+    <file>images/setting.png</file>
+    <file>images/bad.png</file>
+    <file>images/good.png</file>
+    <file>images/app_icon.png</file>
+    <file>images/boring.png</file>
+    <file>images/sad.png</file>
+    <file>images/smile.png</file>
+  </qresource>
+  <qresource prefix="Warm_up">
+    <file>images/warmup_animation_arrow.jpg</file>
+    <file>images/warmup_dis_better.jpg</file>
+    <file>images/warmup_dis_wrose.jpg</file>
+    <file>images/warm_up_bg.jpg</file>
+  </qresource>
+  <qresource prefix="Get_Info">
+    <file>images/backgroung_info_qrcode.jpg</file>
+    <file>images/qrcode.jpg</file>
+    <file>images/Get_Info_bg_2.jpg</file>
+    <file>images/Get_Info_bg.jpg</file>
+  </qresource>
+</RCC>

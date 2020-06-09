@@ -1,0 +1,2089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1065</width>
+    <height>764</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>图像质量评价主平台</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="20,0,1">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="display_widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QGroupBox" name="main_show_gbox">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGroupBox{
+    border: 1px solid  rgb(80, 80, 80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+         </property>
+         <property name="title">
+          <string>主显示区</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1">
+          <item>
+           <widget class="QLabel" name="img_show_lb">
+            <property name="text">
+             <string>111</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="img_show_lb_2">
+            <property name="text">
+             <string>222</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tool_widget">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="NR_IQA_tab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>NR-IQA</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="NR_IQA_tab_layout" stretch="0,0,0,0,1">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="choose_pho_gbox">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid  rgb(80, 80, 80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}
+</string>
+            </property>
+            <property name="title">
+             <string>图片文件选择</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLineEdit" name="pho_addr_show_le">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:none;</string>
+                 </property>
+                 <property name="inputMethodHints">
+                  <set>Qt::ImhNone</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="cursorMoveStyle">
+                  <enum>Qt::LogicalMoveStyle</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="choose_pho_btn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>16</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>选择照片</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="algorithm_gbox">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>算法</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8" stretch="0">
+             <property name="spacing">
+              <number>9</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,3">
+                 <item>
+                  <widget class="QLabel" name="al_choose_tip_lb">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border:none;
+font: 12pt &quot;楷体&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>选择算法：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="algorithm_comboBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Times New Roman</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(245, 245, 245);</string>
+                   </property>
+                   <property name="currentText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="scale_gbox">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>缩放操作</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QPushButton" name="zoom_in_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>放大</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="zoom_out_btn">
+                   <property name="minimumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>缩小</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="reset_zoom_btn">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>恢复原图</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="start_mark_gbox">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>评分结果</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1">
+                 <property name="spacing">
+                  <number>2</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>130</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>此图片对的指标为：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="real_mark_lb">
+                     <property name="minimumSize">
+                      <size>
+                       <width>60</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>黑体</family>
+                       <pointsize>18</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="start_mark_btn">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton:disabled {
+	
+	background-color:rgb(244, 0, 0);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 16pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>开始评分</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="mark_info_gbox">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>评价具体信息</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <widget class="QTextEdit" name="all_info_of_iqa_te">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="FR_IQA_tab">
+       <attribute name="title">
+        <string>FR-IQA</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_23">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_22" stretch="0,0,0,0,1">
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="choose_pho_gbox_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid  rgb(80, 80, 80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}
+</string>
+            </property>
+            <property name="title">
+             <string>图片文件选择</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLineEdit" name="pho_addr_show_le_fr_1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:none;</string>
+                 </property>
+                 <property name="inputMethodHints">
+                  <set>Qt::ImhNone</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="cursorMoveStyle">
+                  <enum>Qt::LogicalMoveStyle</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="choose_pho_btn_fr_1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>15</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>选择图片1</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLineEdit" name="pho_addr_show_le_fr_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border:none;</string>
+                 </property>
+                 <property name="inputMethodHints">
+                  <set>Qt::ImhNone</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                 <property name="cursorMoveStyle">
+                  <enum>Qt::LogicalMoveStyle</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="choose_pho_btn_fr_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>楷体</family>
+                   <pointsize>15</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>选择图片2</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="algorithm_gbox_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>算法</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_14" stretch="0">
+             <property name="spacing">
+              <number>9</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_15" stretch="1">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,3">
+                 <item>
+                  <widget class="QLabel" name="al_choose_tip_lb_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border:none;
+font: 12pt &quot;楷体&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>选择算法：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="fr_algorithm_comboBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Times New Roman</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(245, 245, 245);</string>
+                   </property>
+                   <property name="currentText">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="scale_gbox_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>缩放及视图切换操作</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_21">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QPushButton" name="zoom_in_btn_fr">
+                   <property name="minimumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>放大</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="zoom_out_btn_fr">
+                   <property name="minimumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>缩小</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="reset_zoom_btn_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>恢复原图</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <widget class="QPushButton" name="zoom_only_p1_btn_fr">
+                   <property name="minimumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>仅显示图片1</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="zoom_only_p2_btn_fr">
+                   <property name="minimumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>140</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 15px;
+	border: 4px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>仅显示图片2</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="zoom_all_btn_fr">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>共同显示</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="start_mark_gbox_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>评分结果</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_16">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_19" stretch="1,1">
+                 <property name="spacing">
+                  <number>2</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="minimumSize">
+                    <size>
+                     <width>130</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>130</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+                   </property>
+                   <property name="text">
+                    <string>此图片的得分为：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_15">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="real_mark_lb_fr">
+                     <property name="minimumSize">
+                      <size>
+                       <width>60</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>黑体</family>
+                       <pointsize>18</pointsize>
+                       <weight>50</weight>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>0</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QPushButton" name="start_mark_btn_fr">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton:disabled {
+	
+	background-color:rgb(244, 0, 0);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 15pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>开始评分</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="mark_info_gbox_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+    border: 1px solid rgb(80,80,80);
+    border-radius:6px;
+    margin-top:12px;
+}
+QGroupBox:title {
+    color:rgb(28, 120, 167);
+    subcontrol-origin: margin;
+    left: 10px;
+}</string>
+            </property>
+            <property name="title">
+             <string>评价具体信息</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_20">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <property name="topMargin">
+              <number>9</number>
+             </property>
+             <property name="rightMargin">
+              <number>9</number>
+             </property>
+             <property name="bottomMargin">
+              <number>9</number>
+             </property>
+             <item>
+              <widget class="QTextEdit" name="all_info_of_iqa_te_fr">
+               <property name="styleSheet">
+                <string notr="true">border:none;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Ours_tab">
+       <attribute name="title">
+        <string>摄影器材IQA</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="control_hide_widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>30</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="tool_ishide_pb">
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>工
+具
+栏</string>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="no_use_lb">
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="no_use_2_lb">
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1065</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menuNR_IQA">
+     <property name="title">
+      <string>NR_IQA批处理</string>
+     </property>
+     <addaction name="actionBIQI"/>
+     <addaction name="separator"/>
+     <addaction name="actionBRISQUE"/>
+     <addaction name="separator"/>
+     <addaction name="actionNIQE"/>
+     <addaction name="separator"/>
+     <addaction name="actionBLIINDS_2"/>
+     <addaction name="separator"/>
+     <addaction name="actionCPBD"/>
+     <addaction name="separator"/>
+     <addaction name="actionNJQA"/>
+    </widget>
+    <widget class="QMenu" name="menuFR_IQA">
+     <property name="title">
+      <string>FR_IQA批处理</string>
+     </property>
+     <addaction name="actionMSE"/>
+     <addaction name="separator"/>
+     <addaction name="actionRMSE"/>
+     <addaction name="separator"/>
+     <addaction name="actionPSNR"/>
+     <addaction name="separator"/>
+     <addaction name="actionSSIM"/>
+     <addaction name="separator"/>
+     <addaction name="actionUQI"/>
+     <addaction name="separator"/>
+     <addaction name="actionMS_SSIM"/>
+     <addaction name="separator"/>
+     <addaction name="actionSCC"/>
+     <addaction name="separator"/>
+     <addaction name="actionRASM"/>
+     <addaction name="separator"/>
+     <addaction name="actionSAM"/>
+     <addaction name="separator"/>
+     <addaction name="actionVIIF_P"/>
+    </widget>
+    <addaction name="menuNR_IQA"/>
+    <addaction name="menuFR_IQA"/>
+   </widget>
+   <widget class="QMenu" name="iqa_menu">
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>图像质量评价</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="img_enh_menu">
+    <property name="title">
+     <string>图像增强</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="img_pro_menu">
+    <property name="title">
+     <string>基本图像处理</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="iqa_menu"/>
+   <addaction name="img_enh_menu"/>
+   <addaction name="img_pro_menu"/>
+   <addaction name="help_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBIQI">
+   <property name="text">
+    <string>BIQI</string>
+   </property>
+  </action>
+  <action name="actionBRISQUE">
+   <property name="text">
+    <string>BRISQUE</string>
+   </property>
+  </action>
+  <action name="actionNIQE">
+   <property name="text">
+    <string>NIQE</string>
+   </property>
+  </action>
+  <action name="actionBLIINDS_2">
+   <property name="text">
+    <string>BLIINDS_2</string>
+   </property>
+  </action>
+  <action name="actionCPBD">
+   <property name="text">
+    <string>CPBD</string>
+   </property>
+  </action>
+  <action name="actionDIIVINE">
+   <property name="text">
+    <string>DIIVINE</string>
+   </property>
+  </action>
+  <action name="actionNJQA">
+   <property name="text">
+    <string>NJQA</string>
+   </property>
+  </action>
+  <action name="actionMSE">
+   <property name="text">
+    <string>MSE</string>
+   </property>
+  </action>
+  <action name="actionRMSE">
+   <property name="text">
+    <string>RMSE</string>
+   </property>
+  </action>
+  <action name="actionPSNR">
+   <property name="text">
+    <string>PSNR</string>
+   </property>
+  </action>
+  <action name="actionSSIM">
+   <property name="text">
+    <string>SSIM</string>
+   </property>
+  </action>
+  <action name="actionUQI">
+   <property name="text">
+    <string>UQI</string>
+   </property>
+  </action>
+  <action name="actionMS_SSIM">
+   <property name="text">
+    <string>MS-SSIM</string>
+   </property>
+  </action>
+  <action name="actionSCC">
+   <property name="text">
+    <string>SCC</string>
+   </property>
+  </action>
+  <action name="actionRASM">
+   <property name="text">
+    <string>RASM</string>
+   </property>
+  </action>
+  <action name="actionSAM">
+   <property name="text">
+    <string>SAM</string>
+   </property>
+  </action>
+  <action name="actionVIIF_P">
+   <property name="text">
+    <string>VIF_P</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>choose_pho_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>choose_pho_from_pc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1010</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>973</x>
+     <y>-99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_in_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pho_zoom_in()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>897</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>816</x>
+     <y>-56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_out_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pho_zoom_out()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>897</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>827</x>
+     <y>-49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reset_zoom_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pho_zoom_reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1010</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>982</x>
+     <y>-72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_mark_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_mark()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1010</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>940</x>
+     <y>815</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tool_ishide_pb</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ishide_toolmenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1059</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1093</x>
+     <y>9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>choose_pho_btn_fr_1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>choose_pho_1_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>935</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>-57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>choose_pho_btn_fr_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>choose_pho_2_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>951</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>950</x>
+     <y>-35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_in_btn_fr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pho_zoom_in_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>802</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1108</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_out_btn_fr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pho_zoom_out_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>824</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1081</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_only_p1_btn_fr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dis_only_p1_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>859</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1092</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_only_p2_btn_fr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dis_only_p2_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>887</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1082</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>zoom_all_btn_fr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dis_all_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>976</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1104</x>
+     <y>425</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reset_zoom_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pho_zoom_reset_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>989</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1105</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_mark_btn_fr</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>start_score_fr()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>993</x>
+     <y>489</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1122</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>choose_pho_from_pc()</slot>
+  <slot>ensure_choose_algorithm()</slot>
+  <slot>reset_choose_algorithm()</slot>
+  <slot>pho_zoom_in()</slot>
+  <slot>pho_zoom_out()</slot>
+  <slot>pho_zoom_reset()</slot>
+  <slot>start_mark()</slot>
+  <slot>ishide_toolmenu()</slot>
+  <slot>choose_pho_1_fr()</slot>
+  <slot>choose_pho_2_fr()</slot>
+  <slot>ensure_algo_fr()</slot>
+  <slot>reset_algo_fr()</slot>
+  <slot>pho_zoom_in_fr()</slot>
+  <slot>pho_zoom_out_fr()</slot>
+  <slot>dis_only_p1_fr()</slot>
+  <slot>dis_only_p2_fr()</slot>
+  <slot>dis_all_fr()</slot>
+  <slot>pho_zoom_reset_fr()</slot>
+  <slot>start_score_fr()</slot>
+ </slots>
+</ui>

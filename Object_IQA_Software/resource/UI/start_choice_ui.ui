@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+	border-image: url(:/start_choice_ui/images/start_choice_ui_bg__bluesky.jpg);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8,1">
+   <property name="bottomMargin">
+    <number>25</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLineEdit" name="title_zh">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>125</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>125</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>33</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+font: 33pt &quot;黑体&quot; ;
+color: rgb(255, 255, 255);
+border: none;
+
+</string>
+       </property>
+       <property name="text">
+        <string>图像质量评价实验平台</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="title_en">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color:rgb(255, 255, 255);
+font: 17px &quot;Sitka Display&quot;;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Image Subjective Quality Evaluation Experimental Platform</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,8,1">
+     <property name="leftMargin">
+      <number>40</number>
+     </property>
+     <property name="rightMargin">
+      <number>35</number>
+     </property>
+     <property name="bottomMargin">
+      <number>15</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="start_button">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 30pt &quot;楷体&quot;;
+	border-radius: 60px;
+	border: 4px;
+}</string>
+       </property>
+       <property name="text">
+        <string>开始</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="exit_button">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>楷体</family>
+           <pointsize>18</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 18pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+         </property>
+         <property name="text">
+          <string>退出</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="change_skin_button">
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>楷体</family>
+             <pointsize>18</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 18pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>换肤</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="get_info_button">
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>楷体</family>
+             <pointsize>18</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton:hover {
+	background-color: rgb(58, 189, 236);
+}
+
+QPushButton:pressed {
+	
+	background-color: rgb(27, 87, 126);
+}
+
+QPushButton {
+	background-color: rgb(28, 120, 167);
+	color: rgb(255, 255, 255);
+	font: 18pt &quot;楷体&quot;;
+	border-radius: 20px;
+	border: 4px;
+}</string>
+           </property>
+           <property name="text">
+            <string>帮助</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>start_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>from_start_to_main_exp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>495</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-88</x>
+     <y>494</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>exit_this_exe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>846</x>
+     <y>485</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>957</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>change_skin_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>change_skin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>747</x>
+     <y>534</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>745</x>
+     <y>658</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>get_info_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>get_help_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>819</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>836</x>
+     <y>648</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>from_start_to_main_exp()</slot>
+  <slot>exit_this_exe()</slot>
+  <slot>change_skin()</slot>
+  <slot>get_help_info()</slot>
+ </slots>
+</ui>
